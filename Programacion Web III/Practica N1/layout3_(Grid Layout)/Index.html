@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout de cuadrícula</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #373c47;
+    }
+    .grid-container {
+      max-width: 9000px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 20px;
+    }
+    .grid-item {
+      color: #06abc6;
+      background-color: #282c34;
+      padding: 50px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    header{
+      font-size: 30px;
+      background-color: #00a6ab;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      margin: 10px;
+    }
+    footer {
+      font-size: 30px;
+      background-color: #5f9ea0;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+<header>Encabezado</header>
+<div class="grid-container">
+  <div class="grid-item">Item 1</div>
+  <div class="grid-item">Item 2</div>
+  <div class="grid-item">Item 3</div>
+  <div class="grid-item">Item 4</div>
+  <div class="grid-item">Item 5</div>
+  <div class="grid-item">Item 6</div>
+</div>
+<footer>Pie de página</footer>
+</body>
+</html>
