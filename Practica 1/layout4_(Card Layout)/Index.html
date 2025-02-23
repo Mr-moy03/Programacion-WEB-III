@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout de tarjetas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #373c47;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #282c34;
+      color: #06abc6;
+      padding: 21px;
+      width: calc(33.333% - 40px);
+      box-sizing: border-box;
+      text-align: center;
+      border-radius: 10px;
+    }
+    header{
+      font-size: 30px;
+      background-color: #00a6ab;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      margin: 10px;
+    }
+    footer {
+      font-size: 30px;
+      background-color: #5f9ea0;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      margin: 10px;
+    }
+    .Fcolor{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<header>Encabezado</header>
+<div class="card-container">
+  <div class="card">
+    <h2 class="Fcolor">Tarjeta 1</h2>
+    <p>Contenido de la tarjeta 1.</p>
+  </div>
+  <div class="card">
+    <h2 class="Fcolor">Tarjeta 2</h2>
+    <p>Contenido de la tarjeta 2.</p>
+  </div>
+  <div class="card">
+    <h2 class="Fcolor">Tarjeta 3</h2>
+    <p>Contenido de la tarjeta 3.</p>
+  </div>
+</div>
+<footer>Pie de página</footer>
+</body>
+</html>
